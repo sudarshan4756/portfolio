@@ -11,10 +11,10 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(-45deg, #ff0101, #f04f04, #170501, #aa01ff, #ef0808);
+    background: linear-gradient(-45deg, #ff0101, #910485, #170501, #5c004e,#120808, #0a0000);
     background-size: 400% 400%;
     animation: gradientFlow 12s ease infinite;
-    color: #fff;
+    color: #f7f7f7;
 }
 @keyframes gradientFlow {
     0% { background-position: 0% 50%; }
@@ -54,26 +54,34 @@ nav {
 section {
     padding: 50px;
     text-align: center;
+    
+    
 }
+
 
 /* HEADINGS */
 h1 {
-    background: rgb(252,198,128);
+    background:linear-gradient(-45deg, #080000, #ef0808,#080000);
     color: black;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    
 }
+
 
 /* GLASS CARD */
 .card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px;
+   
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    padding: 30px;
     margin: 15px auto;
     width: 80%;
     max-width: 500px;
     transition: 0.3s;
+    background:linear-gradient(-45deg, #ee0404, #0e0109,#870298);
+    font-size: larger;
+   
 }
 .card:hover {
     transform: scale(1.05);
@@ -101,7 +109,7 @@ button:hover {
 }
 .clickable:hover {
     transform: scale(1.05);
-    color: cyan;
+    color: rgb(200, 255, 0);
 }
 .clickable:active {
     transform: scale(1.1);
@@ -110,10 +118,12 @@ button:hover {
 /* CONTACT LINKS */
 .contact-link {
     display: block;
-    margin: 5px 0;
+    margin: 20px 0;
     color: white;
     text-decoration: underline;
     transition: 0.2s;
+    font-size: larger;
+    
 }
 .contact-link:hover {
     transform: scale(1.1);
@@ -125,16 +135,26 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: larger;
+   
 }
 
 /* FORM */
 input, textarea {
-    width: 80%;
+    width: 50%;
     padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    border: none;
+    margin: 15px;
+    border-radius: 10px;
+    border: chartreuse;
+    background:linear-gradient(-45deg, #003753, #000b5d,#000a02);
+    color: rgb(245, 236, 236);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: larger;
+   
+    
 }
+
 
 </style>
 </head>
@@ -160,8 +180,16 @@ input, textarea {
 
 <a href="https://drive.google.com/file/d/1t-0SWUmgOvYxlMV8bZN0znx7rCSxgufB/view" target="_blank">
 <button>Download Resume</button>
+
 </a>
 </section>
+<pre>
+
+
+
+
+
+</pre>
 
 <!-- EDUCATION -->
 <section id="education">
