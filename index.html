@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudarshan Portfolio</title>
+
+<style>
+
+/* BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #ff0101, #f04f04, #170501, #aa01ff, #ef0808);
+    background-size: 400% 400%;
+    animation: gradientFlow 12s ease infinite;
+    color: #fff;
+}
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.nav-btn {
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-btn:hover {
+    transform: scale(1.1);
+    color: cyan;
+    box-shadow: 0 0 10px cyan;
+}
+.nav-btn:active {
+    transform: scale(1.2);
+}
+
+/* SECTIONS */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    background: rgb(252,198,128);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* GLASS CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 500px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+    background: cyan;
+    color: black;
+}
+
+/* CLICKABLE TEXT ANIMATION */
+.clickable {
+    transition: 0.2s;
+    cursor: pointer;
+}
+.clickable:hover {
+    transform: scale(1.05);
+    color: cyan;
+}
+.clickable:active {
+    transform: scale(1.1);
+}
+
+/* CONTACT LINKS */
+.contact-link {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+.contact-link:hover {
+    transform: scale(1.1);
+    color: cyan;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* FORM */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<button class="nav-btn" onclick="go('home')">Home</button>
+<button class="nav-btn" onclick="go('education')">Education</button>
+<button class="nav-btn" onclick="go('skills')">Skills</button>
+<button class="nav-btn" onclick="go('experience')">Experience</button>
+<button class="nav-btn" onclick="go('projects')">Projects</button>
+<button class="nav-btn" onclick="go('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<h1 class="clickable">SUDARSHAN KUMAR SHARMA</h1>
+<a href="tel:+917979772252" class="contact-link clickable">📞 +91 7979772252</a>
+<a href="mailto:Sudarshan_24a12res695@iitp.ac.in" class="contact-link clickable">✉ Sudarshan_24a12res695@iitp.ac.in</a>
+<a href="https://linkedin.com/in/sudarshan-kumar-sharma-6b8638205" target="_blank" class="contact-link clickable">🔗 linkedin.com/in/sudarshan-kumar-sharma-6b8638205</a>
+
+<a href="https://drive.google.com/file/d/1t-0SWUmgOvYxlMV8bZN0znx7rCSxgufB/view" target="_blank">
+<button>Download Resume</button>
+</a>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h1>Education</h1>
+<div class="card">
+<h2>IIT Patna</h2>
+<p>BS (Hons.) Computer Science & Data Analytics</p>
+<p>2024 – 2028</p>
+<p>CGPA: 8.9 / 10</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h1>Technical Skills</h1>
+<div class="card">
+<p>Languages: Python, C++, JavaScript</p>
+<p>Web & Frameworks: Django, HTML, CSS, JavaScript</p>
+<p>Database & Tools: SQL, DBMS, Git, GitHub, VS Code</p>
+<p>Cloud & Deployment: AWS</p>
+<p>Other Concepts: Data Structures & Algorithms, Computer Organization & Architecture, Full Stack Python Developer</p>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h1>Experience</h1>
+<div class="card">
+<h2>JP Morgan Chase & Co.</h2>
+<p>Intern – Full Stack Python Developer</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h1>Projects</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>Face Detection</h2>
+<p>Python & OpenCV Project</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h2>Image to PDF Converter</h2>
+<p>Django Full Stack App</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h2>AI PDF Summarizer</h2>
+<p>NLP Based Application</p>
+<button>View Project</button>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h1>Contact Me</h1>
+
+<form>
+<input type="text" placeholder="Your Name" required><br>
+<input type="email" placeholder="Your Email" required><br>
+<textarea placeholder="Your Message"></textarea><br>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<script>
+// NAVIGATION
+function go(id){
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+
+// CLICK ANIMATION APPLY
+document.querySelectorAll("h1, h2, p, li, .contact-link").forEach(el=>{
+    el.classList.add("clickable");
+});
+</script>
+
+</body>
+</html>
